@@ -86,17 +86,140 @@
 
         <ol>
           <li><a href="index.html">Home</a></li>
-          <li>Add your bot!</li>
+          <li>Add your bot</li>
         </ol>
-        <h2>Add your bot</h2>
-
+        <h2>Add your bot! (Warning, this will not actually save data right now. This is just a mock-up)</h2>
       </div>
     </section><!-- End Breadcrumbs -->
 
     <section class="inner-page">
       <div class="container">
         <p>
-          WORK IN PROGRESS
+          <form class="was-validated">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Bot's Client ID</label>
+              <small id="emailHelp" class="form-text text-muted">You can get this ID from the <a href="https://discord.com/developers/applications">Discord Developer Docs</a>!</small>
+              <input type="string" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="739923682075476089" required>
+              <div class="invalid-feedback">Please enter a Bot ID!</div>
+            </div>
+            <div class="form-group">
+              <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Bot Library</label>
+              <small id="emailHelp" class="form-text text-muted">The Discord library you used to make your bot.</small>
+              <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref" required> 
+                <option value="">Choose One...</option>
+                <option value="1">discord.js</option>
+                <option value="2">discord.py</option>
+                <option value="3">Nyxx</option>
+                <option value="4">Discord.Net</option>
+                <option value="5">DSharpPlus</option>
+                <option value="6">Nostrum</option>
+                <option value="7">coxir</option>
+                <option value="8">DiscordGo</option>
+                <option value="9">Discord4J</option>
+                <option value="10">Javacord</option>
+                <option value="11">discordcr</option>
+                <option value="12">JDA</option>
+                <option value="13">Eris</option>
+                <option value="14">Discordia</option>
+                <option value="15">RestCord</option>
+                <option value="16">Yasmin</option>
+                <option value="17">disco</option>
+                <option value="18">discordrb</option>
+                <option value="19">serenity</option>
+                <option value="20">SwiftDiscord</option>
+                <option value="21">Sword</option>
+                <option value="22">Other</option>
+              </select>
+              <div class="invalid-feedback">Please select a Bot Library!</div>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Bot's Prefix</label>
+              <small id="emailHelp" class="form-text text-muted">The prefix your bot responds to.</small>
+              <input type="string" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="!" required>
+              <div class="invalid-feedback">Please enter a bot prefix!</div>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Brief description of your bot</label>
+              <small id="emailHelp" class="form-text text-muted">A small description of your bot of max 140 characters.</small>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" maxlength="140" required></textarea>
+              <div class="invalid-feedback">Please enter a brief description!</div>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Detailed description of your bot</label>
+              <small id="emailHelp" class="form-text text-muted">A min 300 character description of what your bot does. HTML, CSS, Markdown and Javascript is not allowed (As of right now).</small>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" minlength="300" required></textarea>
+              <div class="invalid-feedback">Please enter a detailed description!</div>
+            </div>
+            <div class="form-group">
+            <div class="custom-control custom-checkbox">
+              <label for="exampleFormControlTextarea1">Add Tags to this bot</label>
+              <small id="emailHelp" class="form-text text-muted">Tags which best describe your bot (max. 6, games don't count).</small>
+              <input type="checkbox" class="custom-control-input" id="customCheck1">
+              <label class="custom-control-label" for="customCheck1">Moderation</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="customCheck2">
+              <label class="custom-control-label" for="customCheck2">Music</label><br>
+            </div>
+            <div class="custom-control custom-checkbox">  
+              <input type="checkbox" class="custom-control-input" id="customCheck3">
+              <label class="custom-control-label" for="customCheck3">Fun</label><br>
+            </div>
+            <div class="custom-control custom-checkbox">  
+              <input type="checkbox" class="custom-control-input" id="customCheck4">
+              <label class="custom-control-label" for="customCheck4">Economy</label><br>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="customCheck5">
+              <label class="custom-control-label" for="customCheck5">Anime</label><br>
+            </div>
+            <div class="custom-control custom-checkbox">    
+              <input type="checkbox" class="custom-control-input" id="customCheck6">
+              <label class="custom-control-label" for="customCheck6">Game</label><br>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="customCheck7">
+              <label class="custom-control-label" for="customCheck6">Meme</label><br>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="customCheck8">
+              <label class="custom-control-label" for="customCheck7">Social</label><br>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="customCheck9">
+              <label class="custom-control-label" for="customCheck8">Leveling</label><br>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="customCheck10">
+              <label class="custom-control-label" for="customCheck9">Web Dashboard</label><br>
+            </div>
+          </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Website URL</label>
+                <small id="emailHelp" class="form-text text-muted">The website of your bot. Full URLs only.</small>
+                <input type="string" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="https://originalbotwebsite.com">
+              </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Github URL</label>
+                  <small id="emailHelp" class="form-text text-muted">Link to your bot's Github page (if it's open source).</small>
+                  <input type="string" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="https://www.github.com/Rocky43007/Rockibot">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Support Server Invite</label>
+                  <small id="emailHelp" class="form-text text-muted">Invite to the server where users can get support.</small>
+                  <input type="string" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="https://discord.gg/rdGrcvW">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Other owners of this bot</label>
+                  <small id="emailHelp" class="form-text text-muted">User IDs, max. 3, You are already listed as an owner.</small>
+                  <input type="string" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="361212545924595712, 739923682075476089">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Invite URL</label>
+                  <input type="string" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="https://discord.com/api/oauth2/authorize?client_id=739923682075476089&permissions=8&redirect_uri=http%3A%2F%2Frockibot.ml%2Fcallback&scope=bot" required>
+                </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
         </p>
       </div>
     </section>
